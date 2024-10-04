@@ -1,15 +1,10 @@
-
-
-import SignUp from "./signup/page";
-
-export default function Home() {
+const SignUp = () => {
   return (
-    <main>
-      <SignUp />
-    
-    </main>
+    <div>
+      <SignUp/>
+     
+    </div>
   );
-}
+};
 
-
-
+export default SignUp;

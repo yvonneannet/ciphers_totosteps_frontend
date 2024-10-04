@@ -1,5 +1,5 @@
-
 "use client";
+
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -57,7 +57,7 @@ export default function SignUp() {
     <div className={`flex flex-col md:flex-row h-full md:h-screen bg-white ${nunito.className}`}>
       <div className="absolute top-4 left-4 flex justify-center md:justify-start">
         <Image
-          src="/images/logo_totosteps.png" 
+          src="/images/logo_totosteps.png"
           alt="TotoSteps Logo"
           width={100}
           height={40}
@@ -79,19 +79,19 @@ export default function SignUp() {
       <div className="w-full md:w-1/2 flex justify-center items-center bg-[#4C0033] p-3 md:p-8 responsive-form">
         <div className="text-white w-full max-w-[450px] flex flex-col justify-center px-4 py-4 space-y-10">
           <h2 className="text-center font-bold md:text-base sm:text-xl" style={{ fontSize: '40px' }}>Create Account</h2>
-          
+
           {errorMessage && (
             <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
               <span className="block sm:inline">{errorMessage}</span>
             </div>
           )}
-          
+
           {successMessage && (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
               <span className="block sm:inline">{successMessage}</span>
             </div>
           )}
-          
+
           <form className="space-y-8" onSubmit={onSubmit}>
             <div className="space-y-1">
               <label className="block text-white md:text-xl" style={{ fontSize: '24px' }}>First Name</label>
